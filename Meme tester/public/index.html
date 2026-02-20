@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Speed Tester</h1>
+        
+        <div class="input-section">
+            <div class="url-input-group">
+                <input type="text" 
+                       id="imageUrl" 
+                       placeholder="Постави URL на изображение (JPG, PNG, GIF, WebP...)" 
+                       value="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400">
+                <button id="testBtn">Тествай</button>
+            </div>
+            
+            <div class="examples-grid">
+                <div class="example-btn" data-url="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400">Test 1</div>
+                <div class="example-btn" data-url="https://i.imgur.com/mJkx3IZ.jpeg">Test 2</div>
+                <div class="example-btn" data-url="https://i.imgur.com/ZOeSUCO.jpeg">Test 3</div>
+                <div class="example-btn" data-url="https://i.imgur.com/d7OPvAN.jpeg">Test 4</div>
+                <div class="example-btn" data-url="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDZ4Z2V2dGQzZzVhZmZ6bHl6bGZ6bHp6bHp6bHp6bHp6bHp6bA/giphy.gif?w=400">Test 5</div>
+            </div>
+        </div>
+
+        <div id="results"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
